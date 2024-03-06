@@ -1,0 +1,142 @@
+.pay-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+}
+
+.pay-wrapper h3 {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.pay-wrapper .column-left {
+  padding: 20px 0;
+  border-top: 1px solid #ededed;
+  margin-right: 30px;
+  width: 678px;
+}
+
+.pay-wrapper .column-left .row-cll {
+  margin: 20px 0;
+}
+
+.pay-wrapper .column-left .row-cll label {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.pay-wrapper .column-left .row-cll input {
+  border: 1px solid #ddd;
+  padding: 0 0.75em;
+  height: 2.507em;
+  font-size: 0.97em;
+  max-width: 100%;
+  width: 100%;
+  vertical-align: middle;
+  background-color: #fff;
+  color: #333;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  -webkit-transition: -webkit-box-shadow 0.2s;
+  transition: -webkit-box-shadow 0.2s;
+  transition: box-shadow 0.2s;
+  transition: box-shadow 0.2s, -webkit-box-shadow 0.2s;
+  outline: none;
+}
+
+.pay-wrapper .column-left .row-cll input:hover, .pay-wrapper .column-left .row-cll input:focus {
+  -webkit-box-shadow: inset 0 0;
+          box-shadow: inset 0 0;
+}
+
+.pay-wrapper .column-left .row-cll textarea {
+  min-height: 150px;
+  padding: 10px;
+  min-width: 100%;
+  max-width: 100%;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  -webkit-transition: -webkit-box-shadow 0.2s;
+  transition: -webkit-box-shadow 0.2s;
+  transition: box-shadow 0.2s;
+  transition: box-shadow 0.2s, -webkit-box-shadow 0.2s;
+  color: #333;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+.pay-wrapper .column-left .row-cll textarea:hover, .pay-wrapper .column-left .row-cll textarea:focus {
+  -webkit-box-shadow: inset 0 0;
+          box-shadow: inset 0 0;
+}
+
+.pay-wrapper .column-right {
+  width: calc(100% - 678px);
+}
+
+.pay-wrapper .column-right .right {
+  text-align: right;
+}
+
+.pay-wrapper .column-right .left {
+  text-align: left;
+}
+
+.pay-wrapper .column-right .box {
+  padding: 20px 40px;
+  border: 2px solid #d26e4b;
+}
+
+.pay-wrapper .column-right .box .row-clr {
+  margin: 20px 0;
+}
+
+.pay-wrapper .column-right .box .row-clr table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.pay-wrapper .column-right .box .row-clr table thead,
+.pay-wrapper .column-right .box .row-clr table tbody {
+  border-bottom: 2px solid #999;
+}
+
+.pay-wrapper .column-right .box .row-clr table thead th,
+.pay-wrapper .column-right .box .row-clr table thead td,
+.pay-wrapper .column-right .box .row-clr table tbody th,
+.pay-wrapper .column-right .box .row-clr table tbody td {
+  padding: 15px 0;
+  border-bottom: 1px solid #ededed;
+}
+
+.pay-wrapper .column-right .box .row-clr input[type="submit"] {
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  background-color: #d26e4b;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+.pay-wrapper .column-right .box .row-clr input[type="submit"]:hover {
+  background-color: #A8583C;
+}
+
+.pay-wrapper .column-right .box .row-clr p {
+  display: block;
+  margin-top: 10px;
+}
+
+.pay-wrapper .column-right .box .row-clr label {
+  margin-left: 5px;
+}
+/*# sourceMappingURL=ThanhToan.css.map */

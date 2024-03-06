@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/Genaral.css">
+    <link rel="stylesheet" href="css/Home.css">
+    <title>Home</title>
+</head>
+<body>
+    <div id="loading-box">
+		<div class="loading"></div>
+	</div>
+    <div id="container">
+        <!-- =========================HEADER======================= -->
+        <header id="header">
+            <div class="header-top">
+                <!-- Nút menu khi màn hình bé -->
+                <div class="btn-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+
+                <a href="#" class="header-top-left">
+                    <ion-icon name="restaurant-outline" class="logo-icon"></ion-icon>
+                    <span class="logo-name">Ẩm thực D&Đ</span>
+                </a>
+
+                <div class="header-top-right">
+                    <ul class="sci">
+                        <li class="sci-item">
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li class="sci-item">
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li class="sci-item">
+                            <a href=""><i class="fab fa-youtube"></i></a>
+                        </li>
+                        <li class="sci-item">
+                            <a href=""><i class="far fa-envelope"></i></a>
+                        </li>
+                        <li class="sci-item">
+                            <a href=""><i class="fas fa-podcast"></i></a>
+                        </li>
+                    </ul>
+                    
+                    <div class="search">
+                        <input class="search-area" type="text" placeholder="Search">
+                        <i class="fas fa-search search-icon"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <nav class="header-bottom-menu">
+                   <a href="Home.html" class="header-item">Home</a>
+                   <a href="Blog.html" class="header-item">Blog</a>
+                   <a href="#" class="header-item">Youtube</a>
+                   <a href="FoodMap.html" class="header-item">Bản đồ ăn</a>
+                </nav>
+
+                <nav class="header-bottom-menu">
+                   <a href="NemProject.html" class="header-item">Dự án nếm</a>
+                   <a href="Portfolio.html" class="header-item">Portfolio</a>
+                   <a href="Contact.html" class="header-item">Contact</a>
+                </nav>
+            </div>
+            <!-- Menu PopUp khi màn hình bé -->
+            <div class="header-menu-popup">
+                <div class="btn-close-menu" onclick="closemenu()">
+                    <i class="fas fa-times"></i>
+                </div>
+                <div class="search">
+                    <input class="search-area" type="text" placeholder="Search">
+                    <i class="fas fa-search search-icon"></i>
+                </div>
+                <div class="header-bottom">
+                    <nav class="header-bottom-menu">
+                       <a href="Home.html" class="header-item">Home</a><br>
+                       <a href="Blog.html" class="header-item">Blog</a><br>
+                       <a href="https://www.youtube.com/channel/UC7GSgFVBpye3Kddfv0aX1og" class="header-item">Youtube</a><br>
+                       <a href="FoodMap.html" class="header-item">Bản đồ ăn</a><br>
+                    </nav>
+                    
+                    <nav class="header-bottom-menu">
+                       <a href="NemProject.html" class="header-item">Dự án nếm</a><br>
+                       <a href="Portfolio.html" class="header-item">Portfolio</a><br>
+                       <a href="Contact.html" class="header-item">Contact</a><br>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!-- Mũi tên lên top -->
+        <a href="#" class="up-top">
+            <ion-icon name="arrow-up-outline"></ion-icon>
+        </a>
+        <!-- =========================MAIN======================= -->
+        <main id="main" onclick="closemenu()">
+            <section id="home-slide">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="images/bgfood3.jpg" alt="">
+                            <div class="slide-container">
+                                <h1>Welcome to Blog Food</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quia dolores tempora quas dicta sint nulla vero repellendus alias totam sequi obcaecati possimus officiis, quisquam asperiores, distinctio placeat, ea perferendis.</p>
+                                <a href="#home-welcome" class="btn">Bắt đàu thôi !</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/bgfood2.jpg" alt="">
+                            <div class="slide-container">
+                                <h1>Welcome to Blog Food</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quia dolores tempora quas dicta sint nulla vero repellendus alias totam sequi obcaecati possimus officiis, quisquam asperiores, distinctio placeat, ea perferendis.</p>
+                                <a href="#home-order" class="btn">Bắt đàu thôi !</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/bgfood1.jpg" alt="">
+                            <div class="slide-container">
+                                <h1>Welcome to Blog Food</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quia dolores tempora quas dicta sint nulla vero repellendus alias totam sequi obcaecati possimus officiis, quisquam asperiores, distinctio placeat, ea perferendis.</p>
+                                <a href="#home-food-map" class="btn">Bắt đàu thôi !</a>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            <section id="home-welcome">
+                <div class="home-welcome-container">
+                    <h1>Xin chào các bạn, chúng mình là Đạt và Dũng</h1>
+                    <p>Chúng mình đang là lập trình viên frontend, làm việc là sinh sống ở Hà Nội. Để tìm hiểu kĩ hơn về
+                        mình, các bạn ghé thăm <a href="#">Portfolio</a> của mình nhé! Đây là bài thực hành lập trình
+                        backend cũng như củng cố kĩ năng lập trình frontend mong các thầy cô, các bạn góp ý, đừng quên
+                        kết bạn với hai bạn lập trình đẹp trai nhé!
+                    </p>
+                    <p>Chúc các bạn có những giây phút trải nghiệm blog thú vị.</p>
+                    <h2>Đạt, Dũng</h2>
+                </div>
+            </section>
+            <section id="home-order">
+                <img src="images/bgfood5.jpg" alt="">
+                <div class="home-order-box">
+                    <span class="big-title">nếm</span>
+                    <h3>Những gì bạn thích và hơn thế nữa</h3>
+                    <a href="#" class="btn">Đặt mua issue 1</a>
+                    <p>NẾM là tạp chí ẩm thực và phong cách sống dành cho giới trẻ, được sáng lập bởi Ninh Tito cùng
+                        ekip nhằm mang tới những nội dung hay ho, thú vị dưới con mắt của những người trẻ. Hãy đặt mua
+                        NẾM ngay hôm nay nhé!</p>
+                </div>
+            </section>
+            <section class="news-slide">
+                <h1>TIN TỨC MỚI</h1>
+                <div class="swiper mySwiper2">
+                    <div class="swiper-wrapper render"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </section>
+            <section id="home-two-cl">
+                <div class="cl-1">
+                    <h1>Nấu ăn cùng mình</h1><br>
+                    <div class="cl-1-container">
+                        <div class="card">
+                            <div class="img-card">
+                                <img src="images/bgfood2.jpg" alt="">
+                            </div>
+                            <div class="card-content">
+                                <a href="" class="content-title">
+                                    Có gì trong chai muối ớt chanh Nha Trang khiến giới review ẩm thực "rần rần"?
+                                </a>
+                                <span class="date">Aug 26, 2021</span>
+                                <p>Muối ớt chanh Nha Trang cải tiến cả công thức lẫn hình thức của thương hiệu gia
+                                    vị Việt Dh Foods khiến vlogger Ninh Tito, Quỳnh Trần JP và giới review ẩm thực
+                                    "rần rần".Muối ớt chanh Nha Trang cải tiến cả công thức lẫn hình thức của thương
+                                    hiệu gia vị Việt Dh Foods khiến vlogger Ninh Tito, Quỳnh Trần JP và giới review
+                                    ẩm thực "rần rần".</p>
+                                <a href="#" class="read-more">Read more <i
+                                        class="fas fa-long-arrow-alt-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="img-card">
+                                <img src="images/bgfood2.jpg" alt="">
+                            </div>
+                            <div class="card-content">
+                                <a href="" class="content-title">
+                                    Có gì trong chai muối ớt chanh Nha Trang khiến giới review ẩm thực "rần rần"?
+                                </a>
+                                <span class="date">Aug 26, 2021</span>
+                                <p>Muối ớt chanh Nha Trang cải tiến cả công thức lẫn hình thức của thương hiệu gia
+                                    vị Việt Dh Foods khiến vlogger Ninh Tito, Quỳnh Trần JP và giới review ẩm thực
+                                    "rần rần".Muối ớt chanh Nha Trang cải tiến cả công thức lẫn hình thức của thương
+                                    hiệu gia vị Việt Dh Foods khiến vlogger Ninh Tito, Quỳnh Trần JP và giới review
+                                    ẩm thực "rần rần".</p>
+                                <a href="#" class="read-more">Read more <i
+                                        class="fas fa-long-arrow-alt-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cl-2">
+                    <h1>Bí kíp du lịch</h1><br>
+                    <div class="cl-2-container">
+                        <div class="card">
+                            <div class="img-card">
+                                <img src="images/bgfood2.jpg" alt="">
+                            </div>
+                            <div class="card-content">
+                                <a href="" class="content-title">
+                                    Có gì trong chai muối ớt chanh Nha Trang khiến giới review ẩm thực "rần rần"?
+                                </a>
+                                <span class="date">Aug 26, 2021</span>
+                                <p>Muối ớt chanh Nha Trang cải tiến cả công thức lẫn hình thức của thương hiệu gia
+                                    vị Việt Dh Foods khiến vlogger Ninh Tito, Quỳnh Trần JP và giới review ẩm thực
+                                    "rần rần".Muối ớt chanh Nha Trang cải tiến cả công thức lẫn hình thức của thương
+                                    hiệu gia vị Việt Dh Foods khiến vlogger Ninh Tito, Quỳnh Trần JP và giới review
+                                    ẩm thực "rần rần".</p>
+                                <a href="#" class="read-more">Read more <i
+                                        class="fas fa-long-arrow-alt-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="img-card">
+                                <img src="images/bgfood2.jpg" alt="">
+                            </div>
+                            <div class="card-content">
+                                <a href="" class="content-title">
+                                    Có gì trong chai muối ớt chanh Nha Trang khiến giới review ẩm thực "rần rần"?
+                                </a>
+                                <span class="date">Aug 26, 2021</span>
+                                <p>Muối ớt chanh Nha Trang cải tiến cả công thức lẫn hình thức của thương hiệu gia
+                                    vị Việt Dh Foods khiến vlogger Ninh Tito, Quỳnh Trần JP và giới review ẩm thực
+                                    "rần rần".Muối ớt chanh Nha Trang cải tiến cả công thức lẫn hình thức của thương
+                                    hiệu gia vị Việt Dh Foods khiến vlogger Ninh Tito, Quỳnh Trần JP và giới review
+                                    ẩm thực "rần rần".</p>
+                                <a href="#" class="read-more">Read more <i
+                                        class="fas fa-long-arrow-alt-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="news-slide">
+                <h1>Tâm sự cùng Đạt</h1>
+                <div class="swiper mySwiper2">
+                    <div class="swiper-wrapper render2"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </section>
+            <section id="home-food-map">
+                <img src="images/bgfood6.jpg" alt="">
+                <div class="food-map-container">
+                    <a href="FoodMap.html" class="btn">Bản đồ ăn</a>
+                    <h2>
+                        CÙNG KHÁM PHÁ BẢN ĐỒ ẨM THỰC CỦA HÀ NỘI VỚI ĐẠT DŨNG
+                        <br>
+                        THEO PHONG CÁCH ĐẲNG CẤP VIP PRO
+                    </h2>
+                </div>
+            </section>
+        </main>
+    <!-- =========================FOOTER======================= -->
+        <footer>
+            <div class="footer-container">
+                <ul class="sci">
+                    <li class="sci-item">
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li class="sci-item">
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li class="sci-item">
+                        <a href=""><i class="fab fa-youtube"></i></a>
+                    </li>
+                    <li class="sci-item">
+                        <a href=""><i class="far fa-envelope"></i></a>
+                    </li>
+                    <li class="sci-item">
+                        <a href=""><i class="fas fa-podcast"></i></a>
+                    </li>
+                </ul>
+                <div class="footer-text">
+                    <p>© Bản quyền 2019 - 2021 sở hữu bởi Công ty TNHH truyền thông Đạt Dũng Auto.
+                        <br>
+                        © Copyright 2019 - 2021 owned by DAT DUNG MEDIA CO., LTD.
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/Genaral.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/scrollreveal.min.js"></script>
+    <script src="js/Home.js"></script>
+</body>
+</html>

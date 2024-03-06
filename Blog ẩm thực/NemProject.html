@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/Genaral.css">
+    <link rel="stylesheet" href="css/NemProject.css">
+    <title>Dự án nếm</title>
+</head>
+<body>
+    <div id="container">
+        <!-- =========================HEADER======================= -->
+        <header id="header">
+            <div class="header-top">
+                <!-- Nút menu khi màn hình bé -->
+                <div class="btn-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+
+                <a href="#" class="header-top-left">
+                    <ion-icon name="restaurant-outline" class="logo-icon"></ion-icon>
+                    <span class="logo-name">Ẩm thực D&Đ</span>
+                </a>
+
+                <div class="header-top-right">
+                    <ul class="sci">
+                        <li class="sci-item">
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li class="sci-item">
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li class="sci-item">
+                            <a href=""><i class="fab fa-youtube"></i></a>
+                        </li>
+                        <li class="sci-item">
+                            <a href=""><i class="far fa-envelope"></i></a>
+                        </li>
+                        <li class="sci-item">
+                            <a href=""><i class="fas fa-podcast"></i></a>
+                        </li>
+                    </ul>
+                    
+                    <div class="search">
+                        <input class="search-area" type="text" placeholder="Search">
+                        <i class="fas fa-search search-icon"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <nav class="header-bottom-menu">
+                   <a href="Home.html" class="header-item">Home</a>
+                   <a href="Blog.html" class="header-item">Blog</a>
+                   <a href="#" class="header-item">Youtube</a>
+                   <a href="FoodMap.html" class="header-item">Bản đồ ăn</a>
+                </nav>
+
+                <nav class="header-bottom-menu">
+                   <a href="NemProject.html" class="header-item">Dự án nếm</a>
+                   <a href="Portfolio.html" class="header-item">Portfolio</a>
+                   <a href="Contact.html" class="header-item">Contact</a>
+                </nav>
+            </div>
+            <!-- Menu PopUp khi màn hình bé -->
+            <div class="header-menu-popup">
+                <div class="btn-close-menu" onclick="closemenu()">
+                    <i class="fas fa-times"></i>
+                </div>
+                <div class="search">
+                    <input class="search-area" type="text" placeholder="Search">
+                    <i class="fas fa-search search-icon"></i>
+                </div>
+                <div class="header-bottom">
+                    <nav class="header-bottom-menu">
+                       <a href="Home.html" class="header-item">Home</a><br>
+                       <a href="Blog.html" class="header-item">Blog</a><br>
+                       <a href="https://www.youtube.com/channel/UC7GSgFVBpye3Kddfv0aX1og" class="header-item">Youtube</a><br>
+                       <a href="FoodMap.html" class="header-item">Bản đồ ăn</a><br>
+                    </nav>
+                    
+                    <nav class="header-bottom-menu">
+                       <a href="NemProject.html" class="header-item">Dự án nếm</a><br>
+                       <a href="Portfolio.html" class="header-item">Portfolio</a><br>
+                       <a href="Contact.html" class="header-item">Contact</a><br>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!-- Mũi tên lên top -->
+        <a href="#" class="up-top">
+            <ion-icon name="arrow-up-outline"></ion-icon>
+        </a>
+        <!-- =========================MAIN======================= -->
+        <main id="main" onclick="closemenu()">
+            <section class="main-header">
+                <div class="main-header-container">
+                    <span class="big-title">nếm</span>
+                    <h2>Những gì bạn thích và hơn thế nữa!</h2>
+                </div>
+            </section>
+            <section class="main-welcome">
+                <div class="main-welcome-container">
+                    <div class="main-welcome-left">
+                        <p><i><b>LỜI NGỎ</b></i></p>
+                        <p>Thân chào bạn đọc,</p>
+                        <p>Cảm ơn bạn đã quan tâm và dành tình yêu cho NẾM. </p>
+                        <p>Nếu bạn chưa biết, NẾM được ra đời với mong muốn được cùng độc giả tìm hiểu về đời sống ẩm thực Việt Nam cũng như quốc tế thông qua các chủ đề khác nhau.</p>
+                        <p>Bằng tất cả niềm đam mê với ẩm thực, sự đầu tư về nội dung, chỉn chu trong hình ảnh và sáng tạo trong thiết kế, đội ngũ của NẾM mong rằng, các ấn phẩm của chúng mình chính là những cuốn “cẩm nang” hướng dẫn và chia sẻ đầy đủ các nội dung giúp bạn đọc sống chậm lại, điều chỉnh sinh hoạt, thói quen ăn uống, hài hòa các mối quan hệ và quan trọng nhất là biết cách nêm-nếm gia vị cho cuộc sống của mình thêm tích cực.</p>
+                        <p>Chúc các bạn có khoảng thời gian vui vẻ khi trải nghiệm NẾM!</p><br>
+                        <em>Đạt Tino</em>
+                    </div>
+                    <div class="main-welcome-right">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/4XeP2dTi6pE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </section>
+            <section class="order-issue">
+                <div class="order-issue-container">
+                    <div class="order-top">
+                        <div class="order-img">
+                            <img src="images/NemBook.jpg" alt="">
+                        </div>
+                        <div class="order-info">
+                            <h2>NẾM ISSUE 01 - ĐỊNH VỊ BẢN THÂN</h2>
+                            <br>
+                            <p><b><i>Tập trung vào việc phát triển thể chất lẫn tinh thần của mỗi con người. Đây chính là một “cẩm nang" hướng dẫn và chia sẻ đầy đủ các nội dung giúp bạn đọc sống chậm lại, điều chỉnh sinh hoạt, ăn uống, cách tự giao tiếp với bản thân tốt hơn.</i></b></p>
+                            <br>
+                            <p><b><i>Nếm đang được bán tại hệ thống FAHASA trên toàn quốc hoặc tại link Shopee hoặc Tiki dưới đây:</i></b></p>
+                        </div>
+                    </div>
+                    <div class="order-bottom">
+                        <a href="#" class="order-btn">đặt mua trên Shopee (Giảm 25%)</a>
+                        <a href="#" class="order-btn">đặt mua trên Tiki (Giảm 50%)</a>
+                    </div>
+                </div>
+            </section>
+            <section class="main-news">
+                <div class="main-news-container">
+                    <div class="card">
+                        <div class="img-card">
+                            <img src="images/bgfood2.jpg" alt="">
+                        </div>
+                        <div class="card-content">
+                            <span class="date">Aug 26, 2021</span>
+                            <a href="" class="content-title">
+                                Có gì trong chai muối ớt chanh Nha Trang khiến giới review ẩm thực "rần rần"?
+                            </a>
+                            <p>Muối ớt chanh Nha Trang cải tiến cả công thức lẫn hình thức của thương hiệu gia
+                                vị Việt Dh Foods khiến vlogger Ninh Tito, Quỳnh Trần JP và giới review ẩm thực
+                                "rần rần".Muối ớt chanh Nha Trang cải tiến cả công thức lẫn hình thức của thương
+                                hiệu gia vị Việt Dh Foods khiến vlogger Ninh Tito, Quỳnh Trần JP và giới review
+                                ẩm thực "rần rần".</p>
+                            <a href="#" class="read-more">Read more <i
+                                    class="fas fa-long-arrow-alt-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img-card">
+                            <img src="images/bgfood7.png" alt="">
+                        </div>
+                        <div class="card-content">
+                            <span class="date">Aug 26, 2021</span>
+                            <a href="" class="content-title">
+                                Có gì trong chai muối ớt chanh Nha Trang khiến giới review ẩm thực "rần rần"?
+                            </a>
+                            <p>Muối ớt chanh Nha Trang cải tiến cả công thức lẫn hình thức của thương hiệu gia
+                                vị Việt Dh Foods khiến vlogger Ninh Tito, Quỳnh Trần JP và giới review ẩm thực
+                                "rần rần".Muối ớt chanh Nha Trang cải tiến cả công thức lẫn hình thức của thương
+                                hiệu gia vị Việt Dh Foods khiến vlogger Ninh Tito, Quỳnh Trần JP và giới review
+                                ẩm thực "rần rần".</p>
+                            <a href="#" class="read-more">Read more <i
+                                    class="fas fa-long-arrow-alt-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main-member">
+                <h2>Gặp gỡ đội ngũ xây dựng web</h2>
+                <div class="main-member-container">
+                    <div class="member">
+                        <div class="img-mem">
+                            <img src="images/bgfood8.jpg" alt="">
+                        </div>
+                        <div class="info-mem">
+                            <span>Nguyễn Thành Đạt</span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore sint quod labore, nesciunt impedit, maxime nemo fugiat, soluta cumque tenetur ex nulla? Temporibus iure, ut neque rerum voluptatem explicabo porro?</p>
+                        </div>
+                    </div>
+                    <div class="member">
+                        <div class="img-mem">
+                            <img src="images/Huanhoahong.jpg" alt="">
+                        </div>
+                        <div class="info-mem">
+                            <span>Nguyễn Thành Đạt</span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore sint quod labore, nesciunt impedit, maxime nemo fugiat, soluta cumque tenetur ex nulla? Temporibus iure, ut neque rerum voluptatem explicabo porro?</p>
+                        </div>
+                    </div>
+                    <div class="member">
+                        <div class="img-mem">
+                            <img src="images/bgfood7.png" alt="">
+                        </div>
+                        <div class="info-mem">
+                            <span>Nguyễn Thành Đạt</span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore sint quod labore, nesciunt impedit, maxime nemo fugiat, soluta cumque tenetur ex nulla? Temporibus iure, ut neque rerum voluptatem explicabo porro?</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- =========================FOOTER======================= -->
+        <footer>
+            <div class="footer-container">
+                <ul class="sci">
+                    <li class="sci-item">
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li class="sci-item">
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li class="sci-item">
+                        <a href=""><i class="fab fa-youtube"></i></a>
+                    </li>
+                    <li class="sci-item">
+                        <a href=""><i class="far fa-envelope"></i></a>
+                    </li>
+                    <li class="sci-item">
+                        <a href=""><i class="fas fa-podcast"></i></a>
+                    </li>
+                </ul>
+                <div class="footer-text">
+                    <p>© Bản quyền 2019 - 2021 sở hữu bởi Công ty TNHH truyền thông Đạt Dũng Auto.
+                    <br>
+                    © Copyright 2019 - 2021 owned by DAT DUNG MEDIA CO., LTD.
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/Genaral.js"></script>
+    <script src="js/scrollreveal.min.js"></script>
+    <script src="js/NemProject.js"></script>
+</body>
+</html>

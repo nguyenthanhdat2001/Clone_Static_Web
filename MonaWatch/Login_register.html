@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MonaShop</title>
+    <link rel="stylesheet" href="css/Login_register.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="bg">
+            <img id="image" src="https://s3.cloud.cmctelecom.vn/tinhte1/2018/04/4295142_GirlXinh_ThienITCollection-Part7_5.jpg" alt="">
+        </div>
+        <div class="register">
+            <div class="content">
+                <h1>Đăng ký</h1>
+                <form action="">
+                    <div class="row error"> </div>
+                    <div class="row">
+                        <label for="Ten">Họ và tên</label>
+                        <input type="text" name="Ten">
+                    </div>
+                    <div class="row">
+                        <label for="TaiKhoan">Tên đăng nhập</label>
+                        <input type="text" name="TaiKhoan">
+                    </div>
+                    <div class="row">
+                        <label for="MatKhau">Mật khẩu</label>
+                        <input type="password" name="MatKhau">
+                    </div>
+                    <div class="row">
+                        <label for="NhapLaiMatKhau">Nhập lại mật khẩu</label>
+                        <input type="password" name="NhapLaiMatKhau">
+                    </div>
+                    <div class="row">
+                        <input type="submit" value="Đăng kí">
+                    </div>
+                    <div class="row">
+                        <p>Bạn đã có tài khoản ? <span class="btn_dn">Đăng nhập ngay</span></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="login">
+            <div class="content">
+                <h1>Đăng nhập</h1>
+                <form action="">
+                    <div class="row error">
+                        Tài khoản mật khẩu không chính xác
+                    </div>
+                    <div class="row">
+                        <label for="TaiKhoan">Tài khoản</label>
+                        <input type="text" name="TaiKhoan">
+                    </div>
+                    <div class="row">
+                        <label for="MatKhau">Mật khẩu</label>
+                        <input type="password" name="Mật Khẩu">
+                    </div>
+                    <div class="row">
+                        <input type="submit" value="Đăng nhập">
+                    </div>
+                    <div class="row">
+                        <p>Bạn chưa có tài khoản ? <span class="btn_dk">Đăng kí ngay</span></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        let bg = document.querySelector('.bg')
+        let btn_dk = document.querySelector('.btn_dk')
+        let btn_dn = document.querySelector('.btn_dn')
+        let img = document.getElementById('image')
+
+        btn_dk.onclick = () => {
+            bg.classList.add('move')
+        }
+        btn_dn.onclick = () =>{
+            bg.classList.remove('move')    
+        }
+    </script>
+</body>
+</html>

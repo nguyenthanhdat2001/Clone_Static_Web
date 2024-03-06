@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.wrapper .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  height: 100vh;
+  width: 50%;
+  -webkit-transition: left 1s ease;
+  transition: left 1s ease;
+}
+
+.wrapper .bg ~ .register {
+  opacity: 0;
+}
+
+.wrapper .bg ~ .login {
+  opacity: 1;
+}
+
+.wrapper .bg.move {
+  left: 50%;
+}
+
+.wrapper .bg.move ~ .register {
+  opacity: 1;
+}
+
+.wrapper .bg.move ~ .login {
+  opacity: 0;
+}
+
+.wrapper .bg img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.wrapper .login,
+.wrapper .register {
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 500px;
+  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+.wrapper .login .content,
+.wrapper .register .content {
+  width: 450px;
+}
+
+.wrapper .login .content h1,
+.wrapper .register .content h1 {
+  margin-bottom: 30px;
+  position: relative;
+  text-transform: uppercase;
+  color: #c89979;
+}
+
+.wrapper .login .content h1::before,
+.wrapper .register .content h1::before {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  width: 100px;
+  height: 3px;
+  background-color: #c89979;
+}
+
+.wrapper .login .content .row,
+.wrapper .register .content .row {
+  margin: 15px 0;
+}
+
+.wrapper .login .content .row.error,
+.wrapper .register .content .row.error {
+  font-size: 16px;
+  color: red;
+}
+
+.wrapper .login .content .row label,
+.wrapper .register .content .row label {
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.wrapper .login .content .row input,
+.wrapper .register .content .row input {
+  border: 1px solid #ddd;
+  padding: 0 0.75em;
+  height: 2.507em;
+  font-size: 14px;
+  max-width: 100%;
+  width: 100%;
+  vertical-align: middle;
+  background-color: #fff;
+  color: #333;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  -webkit-transition: -webkit-box-shadow 0.2s;
+  transition: -webkit-box-shadow 0.2s;
+  transition: box-shadow 0.2s;
+  transition: box-shadow 0.2s, -webkit-box-shadow 0.2s;
+  outline: none;
+}
+
+.wrapper .login .content .row input:hover, .wrapper .login .content .row input:focus,
+.wrapper .register .content .row input:hover,
+.wrapper .register .content .row input:focus {
+  -webkit-box-shadow: inset 0 0;
+          box-shadow: inset 0 0;
+}
+
+.wrapper .login .content .row input[type="submit"],
+.wrapper .register .content .row input[type="submit"] {
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  background-color: #c89979;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+.wrapper .login .content .row input[type="submit"]:hover,
+.wrapper .register .content .row input[type="submit"]:hover {
+  background-color: #a07a61;
+}
+
+.wrapper .login .content .row p,
+.wrapper .register .content .row p {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.wrapper .login .content .row p span,
+.wrapper .register .content .row p span {
+  color: #c89979;
+  font-weight: 500;
+  cursor: pointer;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.wrapper .login .content .row p span:hover,
+.wrapper .register .content .row p span:hover {
+  color: #a07a61;
+}
+/*# sourceMappingURL=Login_register.css.map */

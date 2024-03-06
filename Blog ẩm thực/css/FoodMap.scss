@@ -1,0 +1,132 @@
+.main-food-container{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+
+    .banner{
+        width: 100%;
+    }
+
+    .intro{
+        padding: 50px 10px;
+        h1{
+            font-size: 2rem;
+            text-transform: uppercase;
+            color: var(--primary-color);
+            font-weight: 800;
+        }
+        p{
+            text-align: justify;
+            margin-top: 20px;
+        }
+    }
+
+    .map{
+        height: 500px;
+    }
+
+    .map-note{
+        margin-top: 20px;
+        position: relative;
+        padding: 10px 30px;
+        &::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 1px;
+            background-color: black;
+        }   
+        .note-title{
+            display: block;
+            font-size: 1.5rem;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+        .note-list{
+            margin: 20px 0;
+            .note-list-item{
+                span{
+                    font-size: 18px;
+                    font-weight: 700;
+                }
+                &:nth-child(1) span{
+                    color: #01579B;
+                }
+                &:nth-child(2) span{
+                    color: #C2185B;
+                }
+                &:nth-child(3) span{
+                    color: #795548;
+                }
+            }
+        }
+        p{
+            font-style: italic;
+            font-weight: bold;
+        }
+    }
+}
+
+@media only screen and (max-width: 1023px){
+    .main-food-container{
+        padding-bottom: 40px;
+        .banner{
+            // height: 350px;
+        }
+        .intro{
+            padding: 40px 10px;
+            h1{
+                font-size: 1.5rem;
+            }
+        }
+        .map{
+            height: 400px;
+        }
+        .map-note{ 
+            padding: 10px 25px;
+            .note-title{
+                font-size: 1.2rem;
+            }
+            .note-list{
+                .note-list-item{
+                    span{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 415px){
+    .main-food-container{
+        padding-bottom: 30px;
+        .banner{
+            // height: 200px;
+        }
+        .intro{
+            padding: 30px 10px;
+            h1{
+                font-size: 1.1rem;
+            }
+        }
+        .map{
+            height: 350px;
+        }
+        .map-note{ 
+            padding: 10px 20px;
+            .note-title{
+                font-size: 1rem;
+            }
+            .note-list{
+                .note-list-item{
+                    span{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}

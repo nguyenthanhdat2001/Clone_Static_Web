@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+	margin:0 ;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: Roboto;
+}
+#background {
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	background: url(../images/ava/background-2.png);
+}
+#background img {
+	width: 60%;
+	float: left;
+}
+
+#background .logo {
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 160px;
+	width: 20%;
+}
+#background .logo img {
+	width: 100%;
+}
+
+
+
+#left {
+	width: 40%;
+	height: 100%;
+	float: left;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+#left .title {
+	display: block;
+	padding: 10px 20px;
+	background-color: #232020;
+	margin-bottom: 10px;
+	border-radius: 5px;
+}
+
+#left .title h3 {
+	font-weight: 900;
+	font-size: 2.5em;
+	text-transform: uppercase;
+	font-style: italic;
+	color: #fff;
+}
+
+#left .box {
+	display: block;
+	width: 60%;
+	min-height: 60%;
+	background-color: rgba(255,255,255,0.1);
+	padding: 10px;
+	transition: 0.5s;
+}
+
+#left .box .content-box {
+	width: 100%;
+	height: 100%;
+	padding: 5px;
+	background-color: rgba(35,32,32,0.7);
+}
+
+#left .box .content-box .text{
+	width: 100%;
+	height: 60%;
+}
+
+#left .box .content-box .text .id {
+	width: 100%;
+	height: 23%;
+	margin: 5px 0;
+	padding: 5px;
+}
+
+input {
+	width: 100%;
+	height: 100%;
+	font-size: 16px;
+	outline: none;
+	border: none;
+	background: #fff;
+	color: #000;
+	border-bottom: 1px solid #fff;
+	border-radius: 5px;
+	text-indent: 10px;
+}
+
+#left .box .content-box .btn {
+	width: 100%;
+	height: 40%;
+	padding: 10px 0;
+}
+
+#left .box .content-box .btn .btn-1 {
+	background-color: #101114;
+	width: 90%;
+	text-align: center;
+	margin: auto;
+	padding: 15px;
+	border-radius: 5px;
+}
+
+#left .box .content-box .btn .btn-1 a {
+	text-decoration: none;
+	color: #fff;
+	font-weight: 500;
+	font-size: 1.2em;
+}
+
+#left .box .content-box .btn .feature {
+	margin-top: 10px; 
+	width: 100%;
+	height: 50%;
+	display: flex;
+}
+
+#left .box .content-box .btn .btn-2 {
+	background-color: #101114;
+	width: 40%;
+	text-align: center;
+	margin: auto;
+	padding: 15px;
+	border-radius: 5px;
+}
+
+#left .box .content-box .btn .btn-2 a {
+	text-decoration: none;
+	color: #fff;
+	font-weight: 500;
+	font-size: 1em;
+}
+
+
+
+

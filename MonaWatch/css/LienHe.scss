@@ -1,0 +1,103 @@
+main{
+    .container{
+        padding-top: 60px;
+        .map{
+            height: 500px;
+            padding-bottom: 50px;
+        }
+        .contact{
+            display: flex;
+            justify-content: space-between;
+            margin-left: -20px;
+            margin-bottom: 50px;
+            .contact-item{
+                display: flex;
+                justify-content: center;
+                column-gap: 20px;
+                width: calc(100% / 3 - 20px);
+                margin-left: 20px;
+                .icon-item{
+                    flex-shrink: 0;
+                    span{
+                        width: 40px;
+                        height: 40px;
+                        background-color: var(--third-color);
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: var(--white-color);
+                        i{
+                            font-size: 18px;
+                        }
+                    }
+                }
+                .content-item{
+                    p{
+                        a{
+                            text-decoration: none;
+                            color: #353535;
+                            transition: color 0.3s;
+                            &:hover{
+                                color: var(--third-color);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .card-contact{
+            width: 770px;
+            margin: 0 auto;
+            padding-bottom: 30px;
+            input,textarea{
+                border: none;
+                outline: none;
+                background-color: var(--white-color2);
+                font-size: 16px;
+                font-weight: 400;
+                color: var(--primary-color);
+                transition: box-shadow 0.3s;
+                &:focus{
+                    box-shadow: inset 0 1px 5px #ededed;
+                }
+            }
+            .card-input{
+                display: flex;
+                flex-wrap: wrap;
+                margin-left: -10px;
+                input{
+                    width: calc(100% / 2 - 10px);
+                    margin-left: 10px;
+                    margin-bottom: 10px;
+                    height: 40px;
+                    padding: 0 12px;
+                }
+            }
+            .input-area{
+                width: 100%;
+                textarea{
+                    max-width: 100%;
+                    min-width: 100%;
+                    min-height: 120px;
+                    padding: 12px;
+                    margin-bottom: 10px;
+                }
+            }
+            input[type="submit"]{
+                display: block;
+                margin: 0 auto;
+                width: 380px;
+                height: 40px;
+                background-color: var(--third-color);
+                color: var(--white-color);
+                font-size: 16px;
+                font-weight: 700;
+                transition: background-color 0.3s;
+                cursor: pointer;
+                &:hover{
+                    background-color: var(--fourth-color);
+                }
+            }
+        }
+    }
+}

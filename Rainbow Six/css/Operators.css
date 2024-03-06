@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background: url(../images/ava/backgorund.png) repeat-y;
+}
+
+header .top {
+	width: 100%;
+	height: 70px;
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+	background-color: #24262a;
+}
+
+header .top .logo img {
+	width: 100%;
+}
+
+header .top .your-info {
+	display: block;
+	width: 50px;
+	height: 50px;
+	background-color: rgba(255,255,255,0.3);
+	border-radius: 10px;
+	text-align: center;
+	padding: 5px; 
+	box-shadow: 0px 5px 20px rgba(0,0,0,0.3);
+}
+
+header .top .your-info a {
+	color: #000;
+}
+
+header .top .your-info i:hover {
+	color: white;
+	cursor: pointer;
+}
+
+.avatar {
+	font-size: 40px;
+}
+
+header .bottom {
+	width: 100%;
+	height: 80px;
+	background: #232020;
+}
+
+header .bottom .menu {
+	width: 100%;
+	height: 100%;
+	line-height: 80px;
+}
+
+header .bottom .menu li {
+	display: inline-block;
+	width: 19%;
+	height: 100%;
+	text-align: center;
+
+}
+
+header .bottom .menu a {
+	text-decoration: none;
+	display: block;
+	color: #fff;
+	font-size: 1.4em;
+	font-style: italic;
+	font-weight: 500;
+	text-transform: uppercase;
+
+}
+header .bottom .menu a:hover {
+	color: #fff;
+	background-color: #24262a;
+}
+
+.main {
+	width: 100%;
+	min-height: auto;
+	position: relative;
+	padding: 30px 0;
+	transition: 0.5s;
+}
+
+.main .left {
+	top: 20px;
+	left: 0;
+	width: 49%;
+	min-height: auto;
+	padding: 10px;
+	background-color: rgba(255,255,255,0.1);
+	box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+	float: left;
+}
+
+.main .left .title{
+    height: 100px;
+    width: 100%;
+    background-color:#24262a;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.9em;
+    font-style: italic;
+    padding: 30px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+    color: white;
+}
+
+.main .left .op {
+    padding: 0px 60px;
+    min-height: 650px;
+    width: 100%;
+    margin-top: 10px;
+    background-color: rgba(255,255,255,0.1);
+}
+
+.main .left .op .char{
+    float: left;
+}
+
+.main .left .op .char .box{
+    height: 294px;
+    width: 150px;
+    background-color:rgba(255,255,255,0.1);
+    margin: 10px 22px ;
+ 	float: left;
+}
+
+.main .left .op .char .box .box-img {
+    width: 100%;
+    height: 85%;
+    float: left;
+}
+
+.main .left .op .char .box .box-text {
+    width: 100%;
+    height: 15%;
+    float: left;
+    background-color: rgba(255,255,255,0.6);
+    text-align: center;
+    padding: 8px 0px;
+}
+
+.main .left .op .char .box .box-text span {
+    font-weight: 700;
+    font-size: 1.3em;
+}
+
+.main .left .op .char .box .box-img img {
+    width: 100%;
+}
+
+.main .right {
+	top: 20px;
+	left: 0;
+	width: 49%;
+	min-height: auto;
+	padding: 10px;
+	background-color: rgba(255,255,255,0.1);
+	box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+	float: right;
+}
+
+.main .right .title{
+    height: 100px;
+    width: 100%;
+    background-color:#24262a;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.9em;
+    font-style: italic;
+    padding: 30px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+    color: white;
+}
+
+.main .right .op {
+    padding: 0px 60px;
+    min-height: 650px;
+    width: 100%;
+    margin-top: 10px;
+    background-color: rgba(255,255,255,0.1);
+}
+
+.main .right .op .char{
+    float: right;
+ }
+
+.main .right .op .char .box{
+    height: 294px;
+    width: 150px;
+    background-color:rgba(255,255,255,0.1);
+    margin: 10px 22px ;
+    float: right;
+}
+
+.main .right .op .char .box .box-img {
+    width: 100%;
+    height: 85%;
+    float: right;
+}
+
+.main .right .op .char .box .box-text {
+    width: 100%;
+    height: 15%;
+    float: right;
+    background-color: rgba(255,255,255,0.6);
+    text-align: center;
+    padding: 8px 0px;
+}
+
+.main .right .op .char .box .box-text span {
+    font-weight: 700;
+    font-size: 1.3em;
+}
+
+.main .right .op .char .box .box-img img {
+    width: 100%;
+}
+
+
+footer {
+	display: block;
+	float: left;
+	background:gray;
+	width: 100%;
+	height: 400px;
+	color: #fff;
+	margin-top: 20px;
+}
+
+footer .ft-left {
+	width: 80%;
+	height: 100%;
+	padding: 20px;
+	background: #101114;
+	float: left;
+
+}
+
+footer .ft-left .ft-logo {
+	width: 100%;
+	height: 50px;
+	margin-bottom: 10px;
+}
+
+footer .ft-left .center {
+	width: 100%;
+	height: 200px;
+	padding: 20px 0px;
+}
+footer .ft-left .center ul {
+	width: 700px;
+	height: 100%;
+	margin:auto;
+}
+footer .ft-left .center ul li {
+	float: left;
+	height: 100%;
+	width: 33%;
+	text-transform: uppercase;
+	list-style: none;
+
+}
+
+footer .ft-left .center ul li .subject {
+	display: block;
+	margin-bottom: 15px;
+	font-size: 12px;
+}
+
+footer .ft-left .center ul li .name {
+	font-weight: 900;
+}
+
+footer .ft-left .copyright {
+	text-align: center;
+}
+
+footer .ft-right {
+	width: 20%;
+	height: 100%;
+	background-color: #222222;
+	float: left;
+}
+
+footer .ft-right .border {
+	width: 100%;
+	height: 180px;
+	padding: 20px 0px;
+	margin-bottom: 20px;
+}
+
+footer .ft-right .border .img-in4 {
+	height: 100%;
+	width: 40%;
+	margin: auto;
+}
+footer .ft-right .border .img-in4 img {
+	width: 100%;
+	border-radius: 50%;
+	box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+	cursor: pointer;
+}
+
+footer .ft-right .border .infor {
+	text-align: center;
+}
+
+footer .ft-right .border .infor a {
+	color: #fff;
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 15px;
+}
+
+footer .ft-right .border .img-in4 img:hover {
+	box-shadow: 5px 5px 20px rgba(255,255,255,0.3),
+				-5px 5px 20px rgba(255,255,255,0.3),
+				5px -5px 20px rgba(255,255,255,0.3),
+				-5px -5px 20px rgba(255,255,255,0.3);
+
+}
+
+footer .ft-right .border .infor a:hover {
+	display: block;
+	transform: translateY(-5px);
+	transition: 0.2s linear;
+}

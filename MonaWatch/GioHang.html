@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Giỏ hàng</title>
+    <link rel="stylesheet" href="css/General.css">
+    <link rel="stylesheet" href="css/GioHang.css">
+</head>
+
+<body>
+    <a href="#" class="onTop">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+    <header>
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top-left">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>319 - C16 Lý Thường Kiệt, P.15, Q.11, Tp.HCM</span>
+                    <i class="fas fa-phone"></i>
+                    <span>076 922 0162</span>
+                </div>
+                <div class="header-top-right">
+                    <a href="" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="" title="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="header-center">
+            <div class="container">
+                <a class="header-center-left" href="#">
+                    <img src="images/logo-mona.png" alt="">
+                </a>
+                <div class="header-center-center">
+                    <input type="text" placeholder="Tìm kiếm...">
+                    <div class="search-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+                <div class="header-center-right">
+                    <a href="#">
+                        <i class="fas fa-heart"></i>
+                    </a>
+                    <a href="GioHang.html">
+                        <div class="cart-number">5</div>
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container">
+                <ul class="menu">
+                    <li class="menu-list">
+                        <a href="TrangChu.html">Trang chủ</a>
+                    </li>
+                    <li class="menu-list">
+                        <a href="GioiThieu.html">Giới thiệu</a>
+                    </li>
+                    <li class="menu-list">
+                        <a href="DongHoNam.html">Đồng hồ nam</a>
+                    </li>
+                    <li class="menu-list">
+                        <a href="DongHoNu.html">Đồng hồ nữ</a>
+                    </li>
+                    <li class="menu-list">
+                        <a href="Blogs.html">Blogs</a>
+                    </li>
+                    <li class="menu-list">
+                        <a href="LienHe.html">Liên hệ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="main-path">
+            <div class="container">
+                <div class="path">
+                    <a href="TrangChu.html">TRANG CHỦ</a><span>/</span><b>GIỎ HÀNG</b>
+                </div>
+            </div>
+        </section>
+        <div class="container">
+            <div class="column-left">
+                <table class="product">
+                    <thead>
+                        <tr>
+                            <th colspan="3">Sản phẩm</th>
+                            <th>Giá</th>
+                            <th>Số lượng</th>
+                            <th>Tổng</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="remove">
+                                <i class="far fa-times-circle"></i>
+                            </td>
+                            <td>
+                                <div class="box-img">
+                                    <img src="images/product-03.png" alt="">
+                                </div>
+                            </td>
+                            <td class="product-name">
+                                <a href="ChiTietSP.html">Classico 1</a>
+                            </td>
+                            <td class="product-price">
+                                <b><span>700.000</span> ₫</b>
+                            </td>
+                            <td class="product-quantity">
+                                <input type="button" value=" - ">
+                                <input type="text" value="1" id="num">
+                                <input type="button" value=" + ">
+                            </td>
+                            <td class="product-price">
+                                <b><span>700.000</span> ₫</b>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="remove">
+                                <i class="far fa-times-circle"></i>
+                            </td>
+                            <td>
+                                <div class="box-img">
+                                    <img src="images/product-1.png" alt="">
+                                </div>
+                            </td>
+                            <td class="product-name">
+                                <a href="ChiTietSP.html">Classico 1</a>
+                            </td>
+                            <td class="product-price">
+                                <b><span>500.000</span> ₫</b>
+                            </td>
+                            <td class="product-quantity">
+                                <input type="button" value=" - ">
+                                <input type="text" value="1" id="num">
+                                <input type="button" value=" + ">
+                            </td>
+                            <td class="product-price">
+                                <b><span>500.000</span> ₫</b>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="directional">
+                    <a href="TrangChu.html" class="btn">
+                        <i class="fas fa-arrow-left"></i>
+                        <span>Tiếp tục xem sản phẩm</span>
+                    </a>
+                    <a href="#" class="btn">
+                        <span>Cập nhật giỏ hàng</span>
+                    </a>
+                </div>
+            </div>
+            <div class="column-right">
+                <table class="pay">
+                    <thead>
+                        <tr>
+                            <th colspan="2">Tổng số lượng</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="title">Tổng phụ</td>
+                            <td>
+                                <b><span>4000000</span> ₫</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="title">Giao hàng</td>
+                            <td class="title-ship">Giao hàng miễn phí</td>
+                        </tr>
+                        <tr>
+                            <td class="title">Tổng</td>
+                            <td>
+                                <b><span>4000000</span> ₫</b>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div>
+                    <a href="ThanhToan.html">Tiến hành thanh toán</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-column">
+                    <h3>Thông tin liên hệ</h3>
+                    <div class="footer-row">
+                        <span><i class="fas fa-map-marked-alt"></i></span>
+                        <p>319 C16 Lý Thường Kiệt, Phường 15, Quận 11, Tp.HCM</p>
+                    </div>
+                    <div class="footer-row">
+                        <span><i class="fas fa-mobile-alt"></i></span>
+                        <p>076 922 0162</p>
+                    </div>
+                    <div class="footer-row">
+                        <span><i class="far fa-envelope"></i></span>
+                        <p>319 C16 Lý Thường Kiệt, Phường 15, Quận 11, Tp.HCM</p>
+                    </div>
+                    <div class="footer-row">
+                        <span><i class="fab fa-skype"></i></span>
+                        <p>demonhunterp</p>
+                    </div>
+                    <nav>
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                    </nav>
+                </div>
+                <div class="footer-column">
+                    <h3>Liên kết</h3>
+                    <a href="#">Giới thiệu</a>
+                    <a href="#">Đồng hồ nam</a>
+                    <a href="#">Đồng hồ nữ</a>
+                    <a href="#">Blogs</a>
+                    <a href="#">Liên hệ</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Tải ứng dụng trên</h3>
+                    <p>Ứng dụng Mona Watch hiện có sẵn trên Google Play & App Store. Tải nó ngay.</p>
+                    <a href="#" class="img-download">
+                        <img src="images/img-googleplay.jpg" alt="">
+                    </a>
+                    <a href="#" class="img-download">
+                        <img src="images/img-appstore.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="copy-right">
+                    <p>© Bản quyền thuộc về Thiết kế website Đạt sờ tu đi ô</p>
+                </div>
+                <div class="payment">
+                    <img src="images/img-payment.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/General.js"></script>
+</body>
+</html>

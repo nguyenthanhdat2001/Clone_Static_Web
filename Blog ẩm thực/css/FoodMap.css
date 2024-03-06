@@ -1,0 +1,127 @@
+.main-food-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+.main-food-container .banner {
+  width: 100%;
+}
+
+.main-food-container .intro {
+  padding: 50px 10px;
+}
+
+.main-food-container .intro h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  font-weight: 800;
+}
+
+.main-food-container .intro p {
+  text-align: justify;
+  margin-top: 20px;
+}
+
+.main-food-container .map {
+  height: 500px;
+}
+
+.main-food-container .map-note {
+  margin-top: 20px;
+  position: relative;
+  padding: 10px 30px;
+}
+
+.main-food-container .map-note::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 1px;
+  background-color: black;
+}
+
+.main-food-container .map-note .note-title {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.main-food-container .map-note .note-list {
+  margin: 20px 0;
+}
+
+.main-food-container .map-note .note-list .note-list-item span {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.main-food-container .map-note .note-list .note-list-item:nth-child(1) span {
+  color: #01579B;
+}
+
+.main-food-container .map-note .note-list .note-list-item:nth-child(2) span {
+  color: #C2185B;
+}
+
+.main-food-container .map-note .note-list .note-list-item:nth-child(3) span {
+  color: #795548;
+}
+
+.main-food-container .map-note p {
+  font-style: italic;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 1023px) {
+  .main-food-container {
+    padding-bottom: 40px;
+  }
+  .main-food-container .intro {
+    padding: 40px 10px;
+  }
+  .main-food-container .intro h1 {
+    font-size: 1.5rem;
+  }
+  .main-food-container .map {
+    height: 400px;
+  }
+  .main-food-container .map-note {
+    padding: 10px 25px;
+  }
+  .main-food-container .map-note .note-title {
+    font-size: 1.2rem;
+  }
+  .main-food-container .map-note .note-list .note-list-item span {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .main-food-container {
+    padding-bottom: 30px;
+  }
+  .main-food-container .intro {
+    padding: 30px 10px;
+  }
+  .main-food-container .intro h1 {
+    font-size: 1.1rem;
+  }
+  .main-food-container .map {
+    height: 350px;
+  }
+  .main-food-container .map-note {
+    padding: 10px 20px;
+  }
+  .main-food-container .map-note .note-title {
+    font-size: 1rem;
+  }
+  .main-food-container .map-note .note-list .note-list-item span {
+    font-size: 14px;
+  }
+}
+/*# sourceMappingURL=FoodMap.css.map */

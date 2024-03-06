@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hiển thị ảnh trước khi upload</h1>
+    <input type="file" name="image" id="image"  onchange="ImgFile()">
+    <div id="display-img" style="max-width: 200px;"></div>
+
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque debitis quae corporis, quam perferendis explicabo dolore quidem unde delectus voluptatum aspernatur animi consequuntur nemo quos excepturi modi molestias repellat repellendus!
+
+    <script type="text/javascript">
+        function ImgFile(){
+            var fileSelected = document.getElementById('image').files;
+            if(fileSelected.length > 0){
+                var fileToLoad = fileSelected[0];
+                var fileReader = new FileReader();
+                fileReader.onload = function(e){
+                    var srcData = e.target.result;
+                    var newImg = document.createElement('img');
+                    newImg.style.maxWidth = 200 + 'px';
+                    newImg.src = srcData;
+                    document.getElementById('display-img').innerHTML = newImg.outerHTML;
+                }
+                fileReader.readAsDataURL(fileToLoad);
+            }
+        }
+    </script>
+</body>
+</html>

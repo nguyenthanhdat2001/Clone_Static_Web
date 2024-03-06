@@ -1,0 +1,82 @@
+.contact-container {
+  max-width: 678px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.contact-container h2 {
+  text-align: center;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.contact-container span {
+  display: block;
+  font-size: 14px;
+  margin: 50px 0;
+  text-align: center;
+}
+
+.contact-container input {
+  width: 100%;
+  padding: 10px;
+  background-color: #FAFAFA;
+  border: none;
+  border: 1px solid var(--gray-color);
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-family: 'Open sans', sans-serif;
+  font-size: var(--font-text);
+}
+
+.contact-container input[name="name"] {
+  width: calc(50% - 2.1px);
+}
+
+.contact-container input[type="submit"] {
+  background-color: var(--white-color);
+  color: var(--text-color);
+  border: 2px solid var(--text-color);
+  font-weight: 600;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.contact-container input[type="submit"]:hover {
+  background-color: var(--text-color);
+  color: var(--white-color);
+}
+
+.contact-container textarea {
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 150px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-family: 'Open sans', sans-serif;
+  font-size: var(--font-text);
+  background-color: #FAFAFA;
+}
+
+.contact-container input:focus, .contact-container textarea:focus {
+  background-color: #fff;
+}
+
+@media only screen and (max-width: 415px) {
+  .contact-container h2 {
+    font-size: 1.2rem;
+  }
+  .contact-container span {
+    font-size: 12px;
+  }
+  .contact-container input[name="name"] {
+    width: 100%;
+  }
+  .contact-container span {
+    margin: 30px 0;
+  }
+}
+/*# sourceMappingURL=Contact.css.map */
